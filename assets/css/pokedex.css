@@ -147,6 +147,54 @@
     
 }
 
+/* Estilos para os detalhes do Pokémon */
+.pokemon-details {
+    display: flex; /* Habilita o Flexbox */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: start; /* Posiciona os itens no início da área */
+    background-color: #4c4545;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente escondido */
+}
+
+.pokemon-details img {
+    max-width: 100%;
+    height: 100%;
+    margin-right: 20px; /* Espaço entre a imagem e os dados */
+    object-fit: cover; /* Garante que a imagem não distorça */
+}
+
+.pokemon-details .info {
+    flex-grow: 1; /* O espaço disponível será ocupado pelos dados */
+}
+
+.pokemon-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.pokemon-details p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.pokemon-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pokemon-details ul li {
+    font-size: 1em;
+    margin: 2px 0;
+    text-transform: capitalize;
+}
+
 @media screen and (min-width: 380px){
     .pokemons{
         grid-template-columns: 1fr 1fr;
